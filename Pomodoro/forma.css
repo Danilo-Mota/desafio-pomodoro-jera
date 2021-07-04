@@ -1,0 +1,66 @@
+
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: azure;
+}
+
+header {
+  
+    background-color: #40798c;
+}
+
+div#abc {
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+main {
+    margin: auto;
+}
+
+footer{
+    background-color: #40798c;
+    text-align: center;
+    color: azure;
+}
+button{
+    margin-top: 40px;
+    background-color: #40798c;
+    color: azure;
+    width: 70px;
+    height: 40px;
+    border-color: #40798c;
+    box-sizing: initial;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.fora{
+    margin: auto;
+    height: 550px;
+    width: 400px;
+    display: table;
+}
+.aq{
+    margin: auto;  
+    margin-top: 150px;
+    height: 250px;
+    width: 300px; 
+    align-self: center;
+    
+   
+    
+}
+h1{
+   color: azure;
+} 
+#text{
+   margin: auto;
+   height: 40px;
+   width: 115px;
+   font-size: 50px;
+}

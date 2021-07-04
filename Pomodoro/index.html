@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="process.js" defer></script>
+    <link rel="stylesheet" type=text/css href="forma.css ">
+    <title>Pomodoro - Jera</title>
+</head>
+
+<body>
+    <header>
+        <div id="abc">
+            <h1>Desafio Pomodoro</h1>
+        </div>
+    </header>
+    <main>
+        <div class="fora">
+        <div class="aq">
+            <p id="text">25:00</p>
+            <button id="ini" onclick="chamarIni()"><strong>Iniciar</strong></button>
+            <button id="int" onclick="descansar()"><strong>Intervalo</strong></button>
+            <button id="stop" onclick="resetIni()" onpause=""><strong>Resetar</strong></button>
+            <audio id="som" src="aud.mp3"></audio>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <p>Feito por Danilo Mota :)</p>
+    </footer>
+</body>
+
+</html>
