@@ -32,7 +32,7 @@ function startTimer(duration, display) {
      }
       
      function chamarIni() {
-        var aparecer = 60 * 1;
+        var aparecer = 60 * 25;
             display = document.getElementById("text");
         startTimer(aparecer, display);
         }  
