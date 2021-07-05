@@ -1,5 +1,8 @@
+var contador = 0;
+
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
+    
       
         achar = setInterval(function () {
         minutes = parseInt(timer / 60, 10);
@@ -14,11 +17,10 @@ function startTimer(duration, display) {
             timer = duration;
         }
         if(minutes == 0 && seconds == 0){
+            contador++;
             const barulho = document.getElementById("som");
-            
-            barulho.play();
-            return resetIni(); 
-            
+            barulho.play();         
+            return resetIni();            
         }
     }, 1000);
 }
@@ -46,4 +48,17 @@ function startTimer(duration, display) {
     function som(){
         var som = new Audio("aud");
         som.play();
+    }
+
+    function preguica(){
+          document.getElementById("intm").innerHTML = "Pausa maior em: "+contador+"/4";
+            if(contador == 4){
+                aparecer = 60 * 10;
+                display = document.getElementById("text");
+                startTimer(aparecer, display); 
+                contador == 0;
+                
+        } else {
+            alert("Você ainda não pode fazer uma pausa maior!");
+        }
     }
